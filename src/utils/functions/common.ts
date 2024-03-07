@@ -5,7 +5,7 @@ export const handlePagination = (stateAction: Dispatch<SetStateAction<number>>, 
     switch (action) {
         case 'prev':
             stateAction((prevState: number) => {
-                if (prevState > 0) {
+                if (prevState > 1) {
                     return prevState - 1;
                 } else {
                     alert('limit')
