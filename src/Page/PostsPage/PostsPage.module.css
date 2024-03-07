@@ -1,0 +1,16 @@
+.postsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btnWrapper {
+    padding-top: 20px;
+    display: flex;
+    gap: 60px;
+}
+
+.loading {
+    align-self: center;
+}

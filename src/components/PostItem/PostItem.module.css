@@ -1,0 +1,18 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.post__heading {
+    align-self: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.post__link {
+    color: inherit;
+    &:visited {
+        text-decoration: none;
+    }
+}
