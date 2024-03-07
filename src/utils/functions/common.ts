@@ -1,7 +1,7 @@
 import {Dispatch, SetStateAction} from "react";
 
 export const handlePagination = (stateAction: Dispatch<SetStateAction<number>>, action: string, total: number) => {
-    const limit = 5;
+    const limit = 10;
     switch (action) {
         case 'prev':
             stateAction((prevState: number) => {

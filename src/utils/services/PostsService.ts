@@ -9,7 +9,7 @@ class MyPostsService {
 
     async getPosts(page: number): Promise<{ totalCount: string | null, data: Post[] }> {
         try {
-            const response = await fetch(`${this.url}?_page=${page}&_limit=${5}`);
+            const response = await fetch(`${this.url}?_page=${page}&_limit=${10}`);
             const totalCount = response.headers.get('X-Total-Count');
             const data = await response.json();
             return { totalCount, data };
